@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 3.8rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -72,7 +72,7 @@ a {
   left: 0;
   width: 100%;
   background-color: rgb(255,255,255,0.7);
-  box-shadow: 0 0.1px 5px hsla(220, 32%, 8%, .3);
+  box-shadow: 0 0.1px 3px hsla(220, 32%, 8%, .3);
   z-index: var(--z-fixed);
   backdrop-filter: blur(10px);
 }
@@ -337,44 +337,4 @@ a {
     pointer-events: initial;
     transition: top .3s;
   }
-}
-
-/* 新添加*/
-
-.main-body{
-margin-top: 350px;
-margin-left: 10px;
-margin-right: 10px;
-}
-.main-body-card{
-margin-top: 20px;
-margin-left: 10px;
-margin-right: 10px;
-}
-.post{
-text-indent: 2em;
-line-height: 35px;
-margin-left: 10px;
-margin-right: 10px;
-}
-h1{
-font-size: 40px;
-}
-p{
-font-size: 20px;
-}
-.outline{
-border: 3px solid;
-border-radius: 15px;
-margin-left: 30px;
-margin-right: 30px;
-margin-bottom: 20px;
-}
-.outline:hover{
-background: var(--black-color);
-color: white;
-border-color: var(--black-color);
-}
-a{
-color: var(--black-color);
 }

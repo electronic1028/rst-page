@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Template with Vue</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ title }},{{name}}</h1>
+    <h1></h1>
+    <ul>
+    </ul>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data() {
+        return {
+          title: '',
+          name:''
+        }
+      },
+      mounted() {
+        this.fetchs();
+      },
+      methods: {
+        fetchs() {
+          fetch('config.json')
+            .then(response => response.json())
+            .then(data => {
+              this.title = data.title;
+              this.name = data.name;
+            })
+            .catch(error => console.error(error));
+        }
+      }
+    });
+  </script>
+</body>
+</html>

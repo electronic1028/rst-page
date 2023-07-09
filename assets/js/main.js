@@ -1,4 +1,6 @@
 /*=============== SHOW MENU ===============*/
+function menu(){
+    
 const showMenu = (toggleId, navId) =>{
    const toggle = document.getElementById(toggleId),
          nav = document.getElementById(navId)
@@ -10,21 +12,17 @@ const showMenu = (toggleId, navId) =>{
        // Add show-icon to show and hide the menu icon
        toggle.classList.toggle('show-icon')
    })
-}
-
+ }
 showMenu('nav-toggle','nav-menu');
-
-
-
+}
+setTimeout(menu, 0);
 
 /* 新添加
 * 仓库:https://github.com/codingstartup/app
 -store-expandable-card */
 
-
-
-
-$('.card').on('click', function (e) {
+(function card(){
+$('.click_card').on('click', function (e) {
   let card = $(e.currentTarget)
   let card_offset_scrolltop = $(card).offset().top - $(window).scrollTop()
   
@@ -46,34 +44,33 @@ $('.card').on('click', function (e) {
     $('body').removeClass('noscroll')
   }
 })
+})();
+
+(function vue_config(){
+new Vue({
+      el: '#config',
+      data() {
+        return {
+          title: ''
+        }
+      },
+      mounted() {
+        this.fetchs();
+      },
+      methods: {
+        fetchs() {
+          fetch('config.json')
+            .then(response => response.json())
+            .then(data => {
+              this.title = data.title;
+            })
+            .catch(console.error);
+        }
+      }
+    });
+})();
 
 
-/* Activity */
-fetch('../../activity/activity.json')
-  .then(response => response.json())
-  .then(data => {
-    const title = document.querySelector('#ac_title')
-    const time = document.querySelector('#ac_time')
-    const split_line = document.querySelector('#ac_split_line')
-    const body = document.querySelector('#ac_body')
-    title.innerText = data.title
-    time.innerText = data.time
-    split_line.innerText = data.split_line
-    body.innerHTML = data.body
-  })
-  .catch(console.error)
-
-
-fetch('../../activity/activity_2.json')
-  .then(response => response.json())
-  .then(data => {
-    const title_2 = document.querySelector('#ac_title_2')
-    const time_2 = document.querySelector('#ac_time_2')
-    const split_line_2 = document.querySelector('#ac_split_line_2')
-    const body_2 = document.querySelector('#ac_body_2')
-    title_2.innerText = data.title
-    time_2.innerText = data.time
-    split_line_2.innerText = data.split_line
-    body_2.innerHTML = data.body
-  })
-  .catch(console.error)
+console.log('main.js引入正常。');
+  
+  

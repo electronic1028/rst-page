@@ -1,0 +1,28 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.summer-sound-bg {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 300px;
+    color: white;
+    background: rgb(34, 148, 83);
+}
+.header{
+background: rgb(64,160,112,0.7);
+}
+.nav__logo{
+color: white;
+}
+.nav__toggle,.nav__burger,.nav__close{
+color: white;
+}
+.nav__list,.nav__link,nav__menu{
+color: white;
+background: rgb(64,160,112);
+}
