@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 3.8rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -72,7 +72,7 @@ a {
   left: 0;
   width: 100%;
   background-color: rgb(255,255,255,0.7);
-  box-shadow: 0 0.1px 5px hsla(220, 32%, 8%, .3);
+  box-shadow: 0 0.1px 3px hsla(220, 32%, 8%, .3);
   z-index: var(--z-fixed);
   backdrop-filter: blur(10px);
 }

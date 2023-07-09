@@ -8,10 +8,10 @@ const Navbar = {
                    RSTeam
                </a>
                
-               <div class="nav__toggle" id="nav-toggle">
+               <span class="nav__toggle" id="nav-toggle">
                   <i class="ri-menu-line nav__burger"></i>
                   <i class="ri-close-line nav__close"></i>
-               </div>
+               </span>
             </div>
 
             <!--=============== NAV MENU ===============-->
@@ -68,7 +68,7 @@ const Navbar = {
                       -->
                      </ul>
                   </li>
-                  <li><a href="/posts" class="nav__link">文章</a></li>
+                  <li><a href="https://activity.wuolun.top" class="nav__link">活动</a></li>
                   <li><a href="/policy" class="nav__link">政策&协议</a></li>
                   <li><a href="/about" class="nav__link">关于</a></li>
 
