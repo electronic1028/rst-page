@@ -1,0 +1,11 @@
+:root
+{
+    font-size: 20px;
+    font-family: Helvetica;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 100vh 0;
+    opacity: var(--opacity);
+}

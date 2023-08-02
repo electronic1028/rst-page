@@ -8,163 +8,46 @@
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
-      <link rel="stylesheet" href="../assets/css/main.css">
-      <title>ReSound Team - Creat Possible</title>
+      <link rel="stylesheet" href="assets/css/main.css">
+      <title>ReSound Team - 念念不忘，必有回响</title>
    </head>
-   <body id="app">
-      <!--=============== HEADER ===============-->
-      <header class="header">
-         <nav class="nav container">
-            <div class="nav__data">
-               <a href="#" class="nav__logo">
-                   RSTeam
-               </a>
-               
-               <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-line nav__burger"></i>
-                  <i class="ri-close-line nav__close"></i>
-               </div>
-            </div>
-
-            <!--=============== NAV MENU ===============-->
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li><a href="#" class="nav__link">首页</a></li>
-
-                  <li><a href="#descript" class="nav__link">简介</a></li>
-
-                  <!--=============== DROPDOWN 1 ===============-->
-                  <li class="dropdown__item">
-                     <div class="nav__link">
-                        项目 <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                     </div>
-
-                     <ul class="dropdown__menu">
-                        <li>
-                           <a href="#" class="dropdown__link">
-                               Ultra
-                           </a>                          
-                        </li>
-
-                        <li>
-                           <a href="#" class="dropdown__link">
-                              Leaping
-                           </a>
-                        </li>
-
-                        <!--=============== DROPDOWN SUBMENU ===============
-                        <li class="dropdown__subitem">
-                           <div class="dropdown__link">
-                              <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
-                           </div>
-
-                           <ul class="dropdown__submenu">
-                              <li>
-                                 <a href="#" class="dropdown__sublink">
-                                    <i class="ri-file-list-line"></i> Documents
-                                 </a>
-                              </li>
-      
-                              <li>
-                                 <a href="#" class="dropdown__sublink">
-                                    <i class="ri-cash-line"></i> Payments
-                                 </a>
-                              </li>
-      
-                              <li>
-                                 <a href="#" class="dropdown__sublink">
-                                    <i class="ri-refund-2-line"></i> Refunds
-                                 </a>
-                              </li>
-                           </ul>
-                        </li>
-                      -->
-                     </ul>
-                  </li>
-                  
-                  <li><a href="#" class="nav__link">关于</a></li>
-
-                  <!--=============== DROPDOWN 2 ===============
-                  <li class="dropdown__item">
-                     <div class="nav__link">
-                        Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                     </div>
-
-                     <ul class="dropdown__menu">
-                        <li>
-                           <a href="#" class="dropdown__link">
-                              <i class="ri-user-line"></i> Profiles
-                           </a>                          
-                        </li>
-
-                        <li>
-                           <a href="#" class="dropdown__link">
-                              <i class="ri-lock-line"></i> Accounts
-                           </a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="dropdown__link">
-                              <i class="ri-message-3-line"></i> Messages
-                           </a>
-                        </li>
-                     </ul>
-                  </li>
--->
-                  <li><a href="https://chatbot.weixin.qq.com/webapp/h8zkTvBoZEMALLAQYTg8sY6118uKOV?robotName=%E5%B0%8F%E5%93%8D" class="nav__link">客服</a></li>
-               </ul>
-            </div>
-         </nav>
-      </header>
+   <body>
+   <div id="header"></div>
 
 
 <div class="main-body colorful" style="margin-top:200px;">
-<center><h1 style="font-size: 100px;">For<br>The<br>Future</h1></center>
+<center id="config"><h1 style="font-size: 80px;margin-top: 150px;margin-bottom: 50px;">念念不忘<br>必有回响</center>
 </div>
 
 
-<div class="main-body">
-<center><h1>Activity</h1></center>
-<div class="card" id="card">
-<img src="activity-test.png">
-  <h4 id="ac_title"></h4>
-  <p class="left" id="ac_time"></p>
-  <div class="content-wrapper">
-    <div class="content"><br>
-    <center><p class="split-line" id="ac_split_line">٩(๑•̀ω•́๑)۶</p><br></center>
-    <div id="ac_body"></div>
-        </div>
-  </div>
-</div>
-</div>
+<div class="main-body main-body-title" tg-name="opacity" tg-from="0" tg-to="15">
+<center><h1>Activity</h1>
+<p>全新活动中心已上线，我们推荐你前往活动中心查看更多资讯。</p>
+<p class="gray">该消息持续时间至：2023年8月31日</p><br>
+<button class="btn" onclick="javascript:window.location.href='https://activity.wuolun.top/'">前往</button>
+</center>
 
-<div class="main-body-card">
-<div class="card" id="card_2">
-<img src="activity-test.png">
-  <h4 id="ac_title_2"></h4>
-  <p class="left" id="ac_time_2"></p>
-  <div class="content-wrapper">
-    <div class="content"><br>
-    <center><p class="split-line" id="ac_split_line_2">٩(๑•̀ω•́๑)۶</p><br></center>
-    <div id="ac_body_2"></div>
-        </div>
-  </div>
-</div>
-</div>
 
-<div class="main-body" id="descript">
-<center><h1>Introduction</h1></center>
+<div class="main-body main-body-title" id="descript" tg-name="opacity" tg-from="0" tg-to="7">
+<center><h1>Introduction</h1>
 <p class="post">回响项目组创立于2022年12月1日，主要提供免费的内容托管服务以及开源项目制作。</p>
 <p class="post">回响团队始终坚持<b>隐私第一，用户第一</b>的原则，我们永远都在坚持保护隐私的路上 </p>
 </div>
+</center>
 
-<div class="card-body main-body">
+
+<div class="main-body main-body-title" id="descript" tg-name="opacity" tg-from="0" tg-to="7">
+<center><h1>Trust</h1></center><br><br>
+   <center><img src="image/tencent_logo.png" width="200px"></center>
+</div>
+
+<div class="card-body main-body main-body-title" tg-name="opacity" tg-from="0" tg-to="7">
 <center><h1>Target</h1></center>
 <div class="card">
-  <!--<img src="https://source.unsplash.com/900x600/?nature,water,1">-->
-  <h4>创新永不停歇</h4>
-  <div class="content-wrapper">
-    <div class="content">
+  <img src="image/sapling.png">
+ <center> <h4 style="font-size: 32px;margin-top: -30px;margin-bottom: 15px;">创新永不停歇</h4></center>
+  <div class="content-wrappers">
+    <div class="contents">
       <p>在项目组创建以来，我们从来都没有停止创新。创新从来都不是一个新的名词，他已经深深地刻在了我们的脑海之中。</p><br>
       <p>我们结合原有的技术，再进行一系列的创新，会得到意想不到的结果。因此，创新永不停歇，是我们的宗旨之一。</p>
         </div>
@@ -172,37 +55,34 @@
 </div>
 
 <div class="card">
-  <!--<img src="https://source.unsplash.com/900x600/?nature,water,2">-->
-  <h4>隐私第一，用户第一</h4>
-  <div class="content-wrapper">
+ <img src="image/iceberg.png">
+ <center> <h4 style="font-size: 28px;margin-top: -30px;margin-bottom: 15px;">用户第一，隐私第一</h4></center>  <div class="content-wrappers">
     <div class="content">
    <p>数据的安全与隐私，是我们的重点研究对象。在如何做到既能处理好用户数据又能不被他人利用，我们做了许多的功夫。</p><br>
-   <p>例如，我们根据当前的隐私政策做出了大量的修改，以及颁布了《儿童隐私政策》以及《创作者隐私政策》，在不同方面都做出的不同的多样化改变。</p><br>
    <p>我们始终将用户放在我们的第一位，因此，在保障用户的权益的路上，我们一直冲在前锋。</p><br>
    <h2>相关链接:</h2>
-   <a href="">涡轮用户隐私政策</a>
+   <a href="policy" class="link" style="font-size: 20px;">隐私政策</a>
     </div>
   </div>
 </div>
 
 <div class="card">
- <!-- <img src="https://source.unsplash.com/900x600/?nature,water,3">-->
-  <h4>版权意识至上</h4>
-  <div class="content-wrapper">
+<img src="image/city.png">
+ <center> <h4 style="font-size: 32px;margin-top: -30px;margin-bottom: 15px;">版权意识至上</h4></center>
+  <div class="content-wrappers">
     <div class="content">
     <p>我们提供的服务中，版权服务一直都是作为主要对象。对于版权这一已经不新鲜事物，在我们看来，一直都是非常重要的。</p><br>
-    <p>版权不仅仅已经渗透入我们的生活，例如你手上的手机或正在浏览我们网站的电脑都包含了许多零部件，而这些零部件至少包含了是十个专利。</p><br>
     <p>我们做的，只能是以最大的努力保障创作者的版权不被其侵犯。而我们有限的努力，肯定会有反响。</p>
         </div>
   </div>
 </div>
 
 <div class="card">
-  <!--<img src="https://source.unsplash.com/900x600/?nature,water,4">-->
-  <h4>你觉得我们应该还要做什么？</h4>
-  <div class="content-wrapper">
+ <img src="image/trees.png">
+ <center> <h4 style="font-size: 32px;margin-top: -30px;margin-bottom: 15px;">坚持低碳、坚持环保</h4></center>
+  <div class="content-wrappers">
     <div class="content">
-    <p>你认为，我们应该怎么做才能提升自己呢？欢迎发送邮件向我们提供意见。</p>
+    <p>回响项目组坚持低碳生活以及低碳工作，在日常工作中我们持续保持最低碳排放，为当前全球变暖趋势做出行动。</p>
 </div>
   </div>
 </div>
@@ -210,10 +90,11 @@
 
 
 <div class="main-body">
-<center><h1>Contact</h1><p>您可以通过以下方式联系到我们</p>
+<center><h1>Contact</h1><p>您可以通过以下方式联系到我们</p><br>
 
-<a href="mailto:rst@wuolun.top"><div class="outline"><h1><i class="ri-mail-line"></i><br>Email</h1></div></a>
-<div class="outline"><h1><i class="ri-wechat-2-line"></i><br>WeChat</h1></div>
+<a href="mailto:rst@wuolun.top"><div><h1><br>Email</h1></div></a><br><br>
+<h1 style="color: gray;">——OR——</h1>
+<div><h1><br>WeChat</h1></div>
 </center>
 </div>
 
@@ -221,15 +102,21 @@
 <center>
 <div id="app">
 </div>
-<p>ReSound Team©️2022-2023</p>
-<p>Something wrong</p>
+<img src="image/wuolun_logo.png" width="60px" style="border-radius: 350px;">
+<p style="color: gray;">WuoLun Recast Technology</p>
+<p style="color: gray;">ReTEAM©️2022-2023</p>
+<a href="project/log/index.html" class="link">About Project</p>
 </center>
 </footer>
 
-
       <!--=============== MAIN JS ===============-->
-      <script src="script/vue_3.2.45.js"></script>
+   <script src="script/vue.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
    <script src="assets/js/main.js"></script>
+   <script src="assets/js/nav.js"></script>
+   <script src="assets/js/fetch.js"></script>
+   <script src="assets/js/vue_config.js"></script>
+   <script src="//cdn.jsdelivr.net/npm/@triggerjs/trigger" defer></script>
    </body>
+   
 </html>
